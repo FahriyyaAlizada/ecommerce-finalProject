@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.sale {
+    background-color: #f28b82;
+    padding: 6px;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(253, 240, 213);
+}
+
+.li {
+    margin-top: 3px;
+}
+
+header {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    font-size: 80%;
+}
+
+.header li {
+    font-size: 10px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    margin-top: 10px;
+}
+
+.header .part1 {
+    margin-left: 20px;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header .part1 ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.header .part1 ul li a {
+    text-decoration: none;
+    color: rgb(120, 0, 0);
+}
+
+.header .part2 {
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.header .part2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+}
+
+.header .part2 ul li a i {
+    font-size: 10px;
+    width: 10px;
+    color: #f28b82;
+}
+
+.header button {
+    width: 40px;
+    font-size: 8px;
+    border: 1px solid rgb(221, 45, 74);
+    background-color: rgb(221, 45, 74);
+    color: rgb(253, 240, 213);
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.header button:hover {
+    width: 40px;
+    font-size: 8px;
+    border: 1px solid rgb(253, 240, 213);
+    background-color: rgb(253, 240, 213);
+    color: rgb(221, 45, 74);
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.input {
+    width: 100px;
+    padding: 5px 5px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    font-size: 7px;
+    outline: none;
+    background-color: #f9f9f9;
+}
+
+.input::placeholder {
+    color: #999;
+    font-size: 7px;
+}
+
+.input:focus {
+    border-color: #888;
+    background-color: #fff;
+}
+
+.header-image {
+    width: 100%;
+}
+
+.header-image img {
+    width: 100%;
+    height: 250px;
+}
+
+.body1 {
+    margin: 100px;
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.img1 {
+    width: 250px;
+    height: 150px;
+}
+
+.body2 {
+    margin: 100px;
+    font-size: 13px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.body-image {
+    width: 100%;
+}
+
+.body-image img {
+    width: 100%;
+    height: 200px;
+}
+
+body button {
+    width: 60px;
+    font-size: 8px;
+    border: 1px solid rgb(221, 45, 74);
+    background-color: rgb(221, 45, 74);
+    color: rgb(253, 240, 213);
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+body button:hover {
+    width: 60px;
+    font-size: 8px;
+    border: 1px solid rgb(253, 240, 213);
+    background-color: rgb(253, 240, 213);
+    color: rgb(221, 45, 74);
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.body3 {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feedback-card {
+    flex: 1 1 300px;
+    max-width: 220px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.feedback-card.highlight {
+    background: #f28b82;
+    color: white;
+}
+
+.feedback-card::before {
+    content: "“";
+    font-size: 16px;
+    color: #c0392b;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.feedback-card.highlight::before {
+    color: white;
+}
+
+.feedback-card h3 {
+    font-size: 13px;
+    margin: 10px 0;
+    color: #c0392b;
+}
+
+.feedback-card.highlight h3 {
+    color: white;
+}
+
+.feedback-card p {
+    font-size: 8px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.body4 {
+    margin: 100px;
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.products-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0;
+}
+
+.product-card {
+    padding: 30px 20px;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.product-card.dark {
+    background: #2c2c2c;
+    color: white;
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    font-size: 6px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-card.dark p {
+    color: #ccc;
+}
+
+footer {
+    width: 100%;
+    background-color: #f28b82;
+}
+
+.footer {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    padding-top: 70px;
+    gap: 20px;
+    font-size: 70%;
+    margin-top: 80px;
+}
+
+.footer .f_part1 {
+    width: 350px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .f_part1 p a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.footer .f_part2 {
+    width: 250px;
+    text-align: left;
+}
+
+.footer .f_part2 ul {
+    padding-top: 10px;
+    list-style-type: none;
+    margin-left: 50px;
+}
+
+.footer .f_part2 h4 {
+    color: white;
+    margin-left: 50px;
+}
+
+.footer .f_part2 ul li {
+    padding-top: 15px;
+}
+
+.footer .f_part3 {
+    width: 400px;
+}
+
+.footer .f_part3 ul {
+    padding-top: 10px;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.footer .f_part3 h4 {
+    color: white;
+    margin-left: 30px;
+}
+
+.footer .f_part3 ul li {
+    padding-top: 15px;
+}
+
+.footer .f_part4 h4 {
+    color: white;
+    margin-left: 30px;
+}
+
+.f_part41 {
+    display: flex;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.f_part41 .input1 {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    background-color: #f28b82;
+}
+
+.input1::placeholder {
+    font-size: 10px;
+}
+
+.input2::placeholder {
+    font-size: 10px;
+}
+
+.f_part41 .input2 {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    color: black;
+    background-color: #f28b82;
+}
