@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Contact</title>
     <script src="https://kit.fontawesome.com/7439499f70.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
+
 <body>
     <header>
         <div class="sale">
@@ -36,25 +38,44 @@
         </div>
 
     </header>
-<hr>
-    <main>
-        <h3 style="text-align: center; margin-top: 20px; margin-bottom: 10px; color: rgb(120, 0, 0);">Log in</h3>
-        <div class="main">
-            <form>
-                <a href="#"></a>
-                <div class="element">
-                    <label for=""><a href="#">Username</a></label> <br>
-                    <input type="text" id="username">
-                </div>
-                <div class="element">
-                    <label for=""><a href="#">Password</a></label> <br>
-                    <input type="password" id="password">
-                </div>
-                <button>Log in</button>
-                <p style="font-size: 8px; margin-top: 10px; margin-left: 46px;">Do not have an account? <span>
-                <a href="./register.html" style="color: #f28b82; text-decoration: none;">Create an Account</a></span></p>
-            </form>
+    <hr>
+
+
+    <main style="margin-left: 28px; margin-right: 28px; margin-bottom: 80px;">
+        <div class="breadcrumb">
+            Home / <span>Contact</span>
         </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="section">
+                    <i class="fa-solid fa-phone"></i>
+                    <h3>Call To Us</h3>
+                    <p>We are available 24/7, 7 days a week.</p>
+                    <p>Phone: +8801611112222</p>
+                </div>
+                <hr>
+                <div class="section">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h3>Write To Us</h3>
+                    <p>Fill out our form and we will contact you within 24 hours.</p>
+                    <p>Emails: customer@exclusive.com</p>
+                    <p>Emails: support@exclusive.com</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name *" required>
+                        <input type="email" placeholder="Your Email *" required>
+                        <input type="tel" placeholder="Your Phone *" required>
+                    </div>
+                    <textarea placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+
     </main>
 
 
@@ -90,4 +111,5 @@
         </div>
     </footer>
 </body>
+
 </html>
