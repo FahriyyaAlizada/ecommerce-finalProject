@@ -26,7 +26,7 @@ function loadOnProducts() {
                 </td>
                 <td>${element.category}</td>
                 <td>${element.price} $</td>
-                <td>${element.rating}</td>
+                <td>${element.rating}/5</td>
                 <td><button type="button" class="btn btn-primary edit-btn" data-id="${element.id}" style ="font-size:7px">Edit</td>
                 <td><button type="button" class="btn btn-danger delete-btn" data-id="${element.id}" style ="font-size:7px; margin:0px">Delete</td>
                 </tr>

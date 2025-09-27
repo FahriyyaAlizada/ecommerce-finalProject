@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Shop</title>
     <script src="https://kit.fontawesome.com/7439499f70.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/shop.css">
 </head>
-
 <body>
     <header>
         <div class="sale">
@@ -39,38 +37,51 @@
 
     </header>
 <hr>
-    <main>
-        <h3 style="text-align: center; margin-top: 20px; margin-bottom: 10px; color: rgb(120, 0, 0);">Create an Account</h3>
-        <div class="main">
-            <form>
-                <a href="#"></a>
-                <div class="element">
-                    <label for=""><a href="#">Name</a></label> <br>
-                    <input type="text" id="name">
-                </div>
-                <div class="element">
-                    <label for=""><a href="#">Surname</a></label> <br>
-                    <input type="text" id="surname">
-                </div>
-                <div class="element">
-                    <label for=""><a href="#">Email</a></label> <br>
-                    <input type="email" id="email">
-                </div>
-                <div class="element">
-                    <label for=""><a href="#">Username</a></label> <br>
-                    <input type="text" id="username">
-                </div>
-                <div class="element">
-                    <label for=""><a href="#">Password</a></label> <br>
-                    <input type="password" id="password">
-                </div>
-                <button>Create account</button>
-                <p style="font-size: 8px; margin-top: 10px; margin-left: 65px;">Already have an account? <span>
-                <a href="./login.html" style="color: #f28b82; text-decoration: none;">Log in</a></span></p>
-            </form>
-        </div>
-    </main>
 
+    <main>
+  <div style="display: flex; justify-content: space-around;gap: 0px;">
+    <aside class="sidebar">
+      <h3>Category</h3>
+      <ul>
+        <li><a href="#">Telephone</a></li>
+        <li><a href="#">Headphones</a></li>
+        <li><a href="#">Ipads</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+
+      <h3>Rate</h3>
+      <div class="rate-filter">
+        <p>★★★★★</p>
+        <p>★★★★☆</p>
+        <p>★★★☆☆</p>
+        <p>★★☆☆☆</p>
+        <p>★☆☆☆☆</p>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div class="main-part1">
+        <div class="search-input">
+          <input type="search" placeholder="Search..." id="searchInput" oninput="searchProduct()">
+        </div>
+        <div class="filter-input">
+          <select id="sortSelect">
+            <option value="">Sort By</option>
+            <option value="priceAsc">Sort by: Price (Low to High)</option>
+            <option value="priceDesc">Sort by: Price (High to Low)</option>
+          </select>
+        </div>
+            <a href=""><button class="refresh">All Products</button></a>
+      </div>
+
+      <div class="main-part2">
+        <div class="cards">
+
+        </div>
+      </div>
+    </section>
+  </div>
+    </main>
 
     <footer>
         <div class="footer">
@@ -103,7 +114,6 @@
             </div>
         </div>
     </footer>
-    <script src="./js/signup.js"></script>
+    <script src="./js/shop.js"></script>
 </body>
-
 </html>

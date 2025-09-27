@@ -16,7 +16,6 @@ function addProduct(){
             image: document.getElementById('product-image').value
         }
         const productId = localStorage.getItem('productId');
-//        localStorage.removeItem('productId');
         
 
         if (productId) {
@@ -116,6 +115,7 @@ function updateProduct(product,productId) {
                     alert('Product updated successfully');
                     localStorage.removeItem('productId');
                     window.location.href = "myProducts.html";
+                    localStorage.removeItem('productId');
                 }
             })
     })
