@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Products</title>
+    <link rel="stylesheet" href="./css/products.css">
     <script src="https://kit.fontawesome.com/7439499f70.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/profile.css">
 </head>
 
 <body>
@@ -40,19 +40,50 @@
     </header>
     <hr>
 
-    <main class="main">
-        <button class="btn">My products for sale</button>
-
-        <div class="card">
-            <h2>User Details</h2>
-            <p><b>Name: </b><span id="user-name"></span></p>
-            <p><b>Surname: </b><span id="user-surname"></span></p>
-            <p><b>Email: </b><span id="user-email"></span></p>
-            <p><b>Username: </b><span id="user-username"></span></p>
+    <main>
+        <div class="main">
+            <div class="form-elements">
+                <button class="my-products">My Products</button>
+                <div class="form-element">
+                    <form>
+                        <div class="element">
+                            <a href="#"></a>
+                            <label><a href="#">Product Brand</a></label> <br>
+                            <input type="text" id="product-brand">
+                        </div>
+                        <div class="element">
+                            <a href="#"></a>
+                            <label><a href="#">Product Model</a></label> <br>
+                            <input type="text" id="product-model">
+                        </div>
+                        <div class="element">
+                            <a href="#"></a>
+                            <label><a href="#">Product Category</a></label> <br>
+                            <input type="text" id="product-category">
+                        </div>
+                        <div class="element">
+                            <a href="#"></a>
+                            <label><a href="#">Message</a></label> <br>
+                            <textarea id="message-box" rows="4" cols="33" style="margin-bottom: 15px; margin-top: 10px;"></textarea>
+                        </div>
+                        <div class="element">
+                            <label><a href="#">Product Price</a></label> <br>
+                            <input type="number" step="0.01" id="product-price">
+                        </div>
+                        <div class="element">
+                            <label><a href="#">Product Rating</a></label> <br>
+                            <input type="number" id="product-rating">
+                        </div>
+                        <div class="element">
+                            <label><a href="#">Product Image</a></label> <br>
+                            <input type="text" id="product-image">
+                        </div>
+                        <button>Save</button>
+                    </form>
+                </div>
+            </div>
         </div>
-
     </main>
-
 
     <footer>
         <div class="footer">
@@ -85,7 +116,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/profile.js"></script>
+    <script src="./js/products.js"></script>
 </body>
 
 </html>
