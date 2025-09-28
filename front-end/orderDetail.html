@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Detail</title>
+    <link rel="stylesheet" href="./css/orderDetail.css">
+    <script src="https://kit.fontawesome.com/7439499f70.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="sale">
+            <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! <span
+                    style="font-weight: bold; text-decoration: underline;"><a href="./shop.html"
+                        style="color: rgb(253, 240, 213);">ShopNow</a></span></p>
+        </div>
+        <div class="header">
+            <div class="part1">
+                <ul>
+                    <li style="font-weight: bold; font-size: 15px;"><a href="">E-commerce</a></li>
+                    <li style="text-decoration: underline; text-decoration-color: rgb(120, 0, 0);" class="li"><a
+                            href="./index.html">Home</a></li>
+                    <li class="li"><a href="./contact.html">Contact</a></li>
+                    <li class="li"><a href="./about.html">About</a></li>
+                    <li class="li"><a href="./register.html" style="margin-right: 10px;">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="part2">
+                <ul>
+                    <li style="margin-right: 190px; margin-left: 4px;"><a href="./shop.html"><button>Shop</button></a></li>
+                    <input class="input" type="text" placeholder="What are you looking for?">
+                    <li style="margin-left: -8px;"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="./login.html"><button>Log in</button></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <hr>
+
+    <main>
+                <div class="confirmation-card">
+            <div class="icon">
+                ✓
+            </div>
+            <h2>Thank You For Your Order!</h2>
+            <p class="message">Your order has been successfully placed.</p>
+
+            <div class="customer-info">
+                <p id="name"><strong>Name:</strong></p>
+                <p id="address"><strong>Address:</strong></p>
+                <p id="phone"><strong>Phone:</strong></p>
+            </div>
+
+            <table class="order-summary" style="margin-top: 40px;">
+                <tr>
+                    <th>Order Confirmation</th>
+                    <td>657489815</td>
+                </tr>
+                <tr>
+                    <th>Purchased Items</th>
+                    <td id="subtotal"></td>
+                </tr>
+                <tr>
+                    <th>Shipping + Handling</th>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <th>Sales Tax</th>
+                    <td>$5.00</td>
+                </tr>
+                <tr class="total">
+                    <th>Total Amount</th>
+                    <td id="totalAmount"></td>
+                </tr>
+            </table>
+
+            <a href="./shop.html"><button class="continue-btn">Continue Shopping</button></a>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="f_part1">
+                <p><a href="#">400 University Drive Suit 200 Coral Gables, FL 33134USA</a></p>
+            </div>
+            <div class="f_part2">
+                <h4>Links</h4>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="f_part3">
+                <h4>Help</h4>
+                <ul>
+                    <li>Payment Options</li>
+                    <li>Returns</li>
+                    <li>Privacy Policies</li>
+                </ul>
+            </div>
+            <div class="f_part4">
+                <h4>Newsteller</h4>
+                <div class="f_part41">
+                    <input class="input1" type="text" placeholder="Email Address">
+                    <input class="input2" type="text" placeholder="SUBSCRIBE">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/orderDetail.js"></script>
+</body>
+</html>

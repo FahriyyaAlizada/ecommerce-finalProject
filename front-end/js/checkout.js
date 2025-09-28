@@ -47,20 +47,9 @@ document.getElementById('orderBtn').addEventListener('click', () => {
             .then(async responses => {
                 let response = responses.find(resp => resp.ok);
                 if (response) {
-                    let message = await response.text();
-                    // alert(message);
-                    Swal.fire({
-                        title: message,
-                        icon: "success",
-                        width: '300px',
-                        position: 'bottom-end',
-                        toast: true,
-                        showConfirmButton: false,
-                        timer: 3000,
-                        timerProgressBar: true,
-                        background: '#d4edda',
-                        color: '#155724',
-                    });
+                    let data = await response.text();
+                    alert(data.message);
+                    window.location.href = `orderDetail.html?id=${data.id}`;
 
                     document.getElementById('firstName').value = "";
                     document.getElementById('lastName').value = "";
@@ -81,18 +70,7 @@ document.getElementById('orderBtn').addEventListener('click', () => {
                         console.log(data);
 
                         if (data.message) {
-                            Swal.fire({
-                                title: data.message,
-                                icon: 'error',
-                                width: '300px',
-                                position: 'bottom-end',
-                                toast: true,
-                                showConfirmButton: false,
-                                timer: 3000,
-                                timerProgressBar: true,
-                                background: '#f8d7da',
-                                color: '#721c24',
-                            });
+                            alert(data.message)
                         }
 
                         document.querySelectorAll('.error-message').forEach(error => error.remove());
@@ -148,7 +126,7 @@ function getSubTotal() {
                         total += item.subTotal;
                     }
                 });
-
+                localStorage.setItem('totalAmount', total)
                 document.getElementById('sub-total').textContent = total + " $";
                 document.getElementById('total').textContent = total + " $";
 
