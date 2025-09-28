@@ -47,7 +47,7 @@ function addToCart() {
             productId: productId
         }
 
-        fetch(`http://localhost:8060/card/add`, {
+        fetch(`http://localhost:8040/card/add`, {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -58,13 +58,9 @@ function addToCart() {
             .then(async response => {
                 let message = await response.text();
                 alert(message);
-                window.location.href = "shop.html";
+                window.location.href = "card.html";
             })
 
     })
 }
 addToCart()
-
-document.getElementById('log-out').addEventListener('click', () => {
-    localStorage.removeItem('token');
-})

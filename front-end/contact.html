@@ -63,14 +63,14 @@
                     <p>Emails: support@exclusive.com</p>
                 </div>
             </div>
-            <div class="contact-form">
+            <div class="contact-form" id="contactForm">
                 <form>
                     <div class="form-row">
-                        <input type="text" placeholder="Your Name *" required>
-                        <input type="email" placeholder="Your Email *" required>
-                        <input type="tel" placeholder="Your Phone *" required>
+                        <input type="text" placeholder="Your Name *" required id="name">
+                        <input type="email" placeholder="Your Email *" required id="email">
+                        <input type="tel" placeholder="Your Phone *" required id="phone">
                     </div>
-                    <textarea placeholder="Your Message"></textarea>
+                    <textarea placeholder="Your Message" id="message"></textarea>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
@@ -110,6 +110,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>

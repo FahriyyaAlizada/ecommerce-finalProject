@@ -29,6 +29,7 @@ public class SecurityConfig {
 	            	.requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
 	            	.requestMatchers(HttpMethod.POST, "/users/register").permitAll()
 	            	.requestMatchers(HttpMethod.POST, "/users/login").permitAll()
+	            	.requestMatchers(HttpMethod.POST, "/contact").permitAll()
 	                .anyRequest().authenticated()
 	            )
 	            .exceptionHandling(exc -> exc

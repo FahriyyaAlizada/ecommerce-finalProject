@@ -214,5 +214,6 @@ function addToCart(productId){
     .then(async response => {
         let message = await response.text();
         alert(message);
+        window.location.href = "card.html";
     })
 }

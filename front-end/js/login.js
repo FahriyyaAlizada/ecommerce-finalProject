@@ -20,6 +20,7 @@ loginForm.addEventListener('submit', (e) => {
             alert('User login successfully');
             const token = await response.text();
             localStorage.setItem('token',token);
+            localStorage.setItem('username', document.getElementById('username').value);
             window.location.href = "index.html";
             document.getElementById('username').value = '';
             document.getElementById('password').value = '';
