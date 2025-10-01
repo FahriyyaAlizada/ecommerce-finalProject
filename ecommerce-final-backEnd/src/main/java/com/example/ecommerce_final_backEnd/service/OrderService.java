@@ -39,6 +39,7 @@ public class OrderService {
 				order.setZipCode(dto.getZipCode());;
 				order.setCart(cart);
 				orderRepository.save(order);
+				
 		
 	}
 

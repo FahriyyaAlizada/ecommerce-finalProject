@@ -47,9 +47,11 @@ document.getElementById('orderBtn').addEventListener('click', () => {
             .then(async responses => {
                 let response = responses.find(resp => resp.ok);
                 if (response) {
-                    let data = await response.text();
-                    alert(data.message);
-                    window.location.href = `orderDetail.html?id=${data.id}`;
+                    let message = await response.text();
+                    alert(message);
+                    window.location.href = `orderDetail.html?id=${response.cartId}`;
+                    console.log(response);
+                    
 
                     document.getElementById('firstName').value = "";
                     document.getElementById('lastName').value = "";

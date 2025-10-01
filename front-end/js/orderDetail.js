@@ -2,9 +2,9 @@ function getOrder(){
     let token = localStorage.getItem('token');
 
     let urlParams = new URLSearchParams(window.location.search);
-    let orderId = urlParams.get('id');
+    let cartId = urlParams.get('cartId');
 
-    fetch(`http://localhost:8040/orders/getById/${orderId}`, {
+    fetch(`http://localhost:8040/orders/getById/${cartId}`, {
         method: 'GET',
         headers: {
             'Authorization': `Bearer ${token}`
@@ -32,4 +32,4 @@ function getOrder(){
         })
 }
 
-getProduct()
+getOrder()
