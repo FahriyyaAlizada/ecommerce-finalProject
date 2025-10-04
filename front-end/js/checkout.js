@@ -47,11 +47,9 @@ document.getElementById('orderBtn').addEventListener('click', () => {
             .then(async responses => {
                 let response = responses.find(resp => resp.ok);
                 if (response) {
-                    let message = await response.text();
-                    alert(message);
-                    window.location.href = `orderDetail.html?id=${response.cartId}`;
-                    console.log(response);
-                    
+                    let data = await response.text();
+                    alert(data);
+                    window.location.href = `orderDetail.html`;
 
                     document.getElementById('firstName').value = "";
                     document.getElementById('lastName').value = "";
@@ -116,6 +114,8 @@ function getSubTotal() {
         .then(async response => {
             let data = await response.json();
             console.log(data);
+            let brands = data.map(item => item.product.brand);
+            localStorage.setItem("brands", JSON.stringify(brands));
 
             let cartIds = JSON.parse(localStorage.getItem('cartIdss'));
 

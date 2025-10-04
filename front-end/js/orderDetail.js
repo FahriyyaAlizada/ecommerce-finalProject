@@ -1,35 +1,24 @@
-function getOrder(){
-    let token = localStorage.getItem('token');
+function getOrder() {
 
-    let urlParams = new URLSearchParams(window.location.search);
-    let cartId = urlParams.get('cartId');
+    let subTotal = document.getElementById('subtotal');
+    subTotal.textContent = " $"+localStorage.getItem("totalAmount");
 
-    fetch(`http://localhost:8040/orders/getById/${cartId}`, {
-        method: 'GET',
-        headers: {
-            'Authorization': `Bearer ${token}`
+    let totall = document.getElementById('totalAmount');
+    totall.textContent = " $" + (Number(localStorage.getItem("totalAmount")) + 15);
+
+    let brands = JSON.parse(localStorage.getItem("brands")) || [];
+    let itemsElement = document.getElementById("items");
+    itemsElement.innerHTML = "<strong>Purchased items:</strong> ";
+    brands.forEach((brand, index) => {
+        let span = document.createElement("span");
+        span.textContent = brand;
+        if (index < brands.length - 1) {
+            span.textContent += ", ";
         }
-    })
-.then(async response => {
-            let object = await response.json();
-            console.log(object);
 
-            let name = document.getElementById('name');
-            name.textContent = object.firstName + " " + object.lastName;
+        itemsElement.appendChild(span);
+    });
 
-            let addresss = document.getElementById('address');
-            addresss.textContent = object.address;
-
-            let phonee = document.getElementById('phone');
-            phonee.textContent = object.phone;
-
-            let subTotal = document.getElementById('subtotal');
-            subTotal.textContent = localStorage.getItem("totalAmount") + " $";
-
-            let totall = document.getElementById('totalAmount');
-            totall.textContent = localStorage.getItem("totalAmount") + 15 + " $";
-
-        })
 }
 
 getOrder()
